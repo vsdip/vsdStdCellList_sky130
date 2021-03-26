@@ -142,8 +142,8 @@ Include the below command to include the additional lef into the flow:
 
 #### Routing:
 * Command: `run_routing`
-* Global Routing done, Detailed routing running from 2 days and still hyave voilations around 42K.
-  
+* Global Routing done, Detailed routing is in progress.
+* 
 ## Future Works: 
 * Improve the layout of custom cells for the routing.
 
