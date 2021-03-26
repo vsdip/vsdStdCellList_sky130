@@ -1,0 +1,70 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsdinv_1x
+  CLASS CORE ;
+  FOREIGN sky130_vsdinv_1x ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.380 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.169500 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.360 1.140 0.600 1.490 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.590800 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.000 0.830 1.240 2.360 ;
+        RECT 0.960 0.400 1.290 0.830 ;
+    END
+  END Y
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.000 0.400 0.360 0.830 ;
+        RECT 0.060 0.180 0.300 0.400 ;
+        RECT 0.000 -0.120 1.350 0.180 ;
+      LAYER mcon ;
+        RECT 0.140 -0.080 0.310 0.100 ;
+        RECT 1.040 -0.080 1.210 0.100 ;
+      LAYER met1 ;
+        RECT 0.000 -0.170 1.380 0.240 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.020 2.570 1.350 2.870 ;
+        RECT 0.060 1.660 0.300 2.570 ;
+      LAYER mcon ;
+        RECT 0.170 2.630 0.340 2.810 ;
+        RECT 1.050 2.640 1.220 2.820 ;
+      LAYER met1 ;
+        RECT 0.000 2.500 1.370 2.900 ;
+    END
+  END VPWR
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.130 1.460 1.510 2.880 ;
+    END
+  END VPB
+END sky130_vsdinv_1x
+END LIBRARY
+

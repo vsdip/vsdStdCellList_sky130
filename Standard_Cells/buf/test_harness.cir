@@ -1,0 +1,20 @@
+Test Harness for verifying buf2.spice
+
+.include '../../sky130nm.lib'
+.include 'sky130_vsdbuf2.spice'
+X1 A Y VPWR VPB VGND sky130_vsdbuf2
+
+* Supplies
+VVGND VGND 0 0
+VVPWR VPWR VGND DC 1.8
+* Input Pulse
+VA A VGND PULSE 0 1.8 0 1n 1n 50ns 100ns 
+
+CLOAD Y VGND 0.05p
+
+.control
+tran 0.1n 100ns
+run
+plot a y+2
+
+.endc

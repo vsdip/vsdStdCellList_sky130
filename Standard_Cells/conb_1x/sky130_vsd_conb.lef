@@ -1,0 +1,71 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsd_conb
+  CLASS BLOCK ;
+  FOREIGN sky130_vsd_conb ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2.000 BY 2.720 ;
+  PIN HI
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.153000 ;
+    ANTENNADIFFAREA 0.198000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.600 1.590 0.770 2.310 ;
+        RECT 0.130 1.420 0.770 1.590 ;
+        RECT 0.130 1.150 0.430 1.420 ;
+    END
+  END HI
+  PIN LO
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.153000 ;
+    ANTENNADIFFAREA 0.138600 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.940 1.100 1.250 1.350 ;
+        RECT 0.600 0.930 1.250 1.100 ;
+        RECT 0.600 0.390 0.770 0.930 ;
+    END
+  END LO
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.140 0.120 0.310 0.760 ;
+        RECT 1.070 0.120 1.240 0.760 ;
+        RECT 0.030 -0.160 1.380 0.120 ;
+      LAYER mcon ;
+        RECT 0.150 -0.110 0.320 0.080 ;
+        RECT 1.090 -0.120 1.260 0.070 ;
+      LAYER met1 ;
+        RECT 0.000 -0.210 1.410 0.200 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 1.130 2.800 1.300 2.810 ;
+        RECT 0.090 2.600 1.400 2.800 ;
+        RECT 0.100 1.830 0.290 2.600 ;
+        RECT 1.100 1.890 1.300 2.600 ;
+      LAYER mcon ;
+        RECT 0.140 2.610 0.310 2.800 ;
+        RECT 1.130 2.620 1.300 2.810 ;
+      LAYER met1 ;
+        RECT 0.000 2.490 1.500 2.900 ;
+    END
+  END VPWR
+  OBS
+      LAYER nwell ;
+        RECT -0.130 1.560 1.540 2.930 ;
+  END
+END sky130_vsd_conb
+END LIBRARY
+

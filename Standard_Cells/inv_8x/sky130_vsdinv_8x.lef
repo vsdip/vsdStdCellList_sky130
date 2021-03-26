@@ -1,0 +1,113 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsdinv_8x
+  CLASS CORE ;
+  FOREIGN sky130_vsdinv_8x ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 4.280 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 1.296000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.380 1.190 3.910 1.370 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.339200 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.670 1.740 0.840 2.410 ;
+        RECT 1.590 1.740 1.760 2.410 ;
+        RECT 2.530 1.740 2.700 2.410 ;
+        RECT 3.490 1.740 3.660 2.410 ;
+        RECT 0.000 1.540 4.260 1.740 ;
+        RECT 0.000 0.980 0.210 1.540 ;
+        RECT 4.090 0.980 4.260 1.540 ;
+        RECT 0.000 0.810 4.260 0.980 ;
+        RECT 0.660 0.800 4.260 0.810 ;
+        RECT 0.670 0.380 0.840 0.800 ;
+        RECT 1.590 0.380 1.760 0.800 ;
+        RECT 2.540 0.380 2.710 0.800 ;
+        RECT 3.490 0.380 3.660 0.800 ;
+    END
+  END Y
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.020 2.610 4.220 2.820 ;
+        RECT 0.200 1.910 0.370 2.610 ;
+        RECT 1.120 1.910 1.290 2.610 ;
+        RECT 2.050 1.910 2.220 2.610 ;
+        RECT 3.000 1.910 3.170 2.610 ;
+        RECT 3.970 1.910 4.140 2.610 ;
+      LAYER mcon ;
+        RECT 0.040 2.630 0.210 2.800 ;
+        RECT 0.460 2.630 0.630 2.800 ;
+        RECT 0.840 2.630 1.010 2.800 ;
+        RECT 1.290 2.630 1.460 2.800 ;
+        RECT 1.710 2.630 1.880 2.800 ;
+        RECT 2.160 2.630 2.330 2.800 ;
+        RECT 2.550 2.630 2.720 2.800 ;
+        RECT 3.010 2.620 3.180 2.790 ;
+        RECT 3.480 2.620 3.650 2.790 ;
+        RECT 3.970 2.630 4.140 2.800 ;
+      LAYER met1 ;
+        RECT 0.000 2.520 4.280 2.900 ;
+        RECT 0.200 1.910 0.370 2.520 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.140 0.390 0.480 0.640 ;
+        RECT 0.140 0.380 0.430 0.390 ;
+        RECT 1.040 0.380 1.390 0.630 ;
+        RECT 1.980 0.380 2.310 0.630 ;
+        RECT 2.920 0.430 3.250 0.630 ;
+        RECT 0.200 0.110 0.370 0.380 ;
+        RECT 0.030 0.100 0.370 0.110 ;
+        RECT 1.140 0.100 1.310 0.380 ;
+        RECT 2.060 0.100 2.230 0.380 ;
+        RECT 3.000 0.100 3.170 0.430 ;
+        RECT 3.900 0.380 4.230 0.620 ;
+        RECT 3.960 0.100 4.130 0.380 ;
+        RECT 0.030 -0.100 4.210 0.100 ;
+      LAYER mcon ;
+        RECT 0.030 -0.080 0.200 0.090 ;
+        RECT 0.450 -0.080 0.620 0.090 ;
+        RECT 0.870 -0.080 1.040 0.090 ;
+        RECT 1.290 -0.080 1.460 0.090 ;
+        RECT 1.720 -0.080 1.890 0.090 ;
+        RECT 2.160 -0.080 2.330 0.090 ;
+        RECT 2.580 -0.080 2.750 0.090 ;
+        RECT 3.010 -0.080 3.180 0.090 ;
+        RECT 3.470 -0.080 3.640 0.090 ;
+        RECT 3.960 -0.080 4.130 0.090 ;
+      LAYER met1 ;
+        RECT 0.000 -0.200 4.280 0.190 ;
+    END
+  END VGND
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.080 1.600 4.360 2.920 ;
+        RECT 0.180 1.590 4.240 1.600 ;
+    END
+  END VPB
+END sky130_vsdinv_8x
+END LIBRARY
+

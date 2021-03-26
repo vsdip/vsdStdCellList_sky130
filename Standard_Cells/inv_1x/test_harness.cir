@@ -1,0 +1,20 @@
+Test Harness for verifying inv.spice
+
+.include '../../sky130nm.lib'
+.include 'sky130_vsdinv_1x.spice'
+
+X1 A VGND VPWR VPWR Y sky130_vsdinv_1x
+
+* Supplies
+VVGND VGND 0 0
+VVPWR VPWR VGND DC 1.8
+* Input Pulse
+VA A VGND PULSE 0 1.8 0 1n 1n 25ns 50ns 
+
+CLOAD Y VGND 0.05p
+
+.control
+tran 0.1n 50ns
+run
+plot a y+2
+.endc

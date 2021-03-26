@@ -1,0 +1,11 @@
+* SPICE3 file created from sky130_vsd_buf2.ext - technology: sky130A
+
+.option scale=0.01u
+
+.subckt sky130_vsdbuf_2x A Y VPWR VPB VGND
+X0 a_42_14# A VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=17
+X1 VGND a_42_14# Y VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X2 VPWR a_42_14# Y VPB sky130_fd_pr__pfet_01v8 w=60 l=15
+X3 a_42_14# A VPWR VPB sky130_fd_pr__pfet_01v8 w=60 l=17
+
+.ends

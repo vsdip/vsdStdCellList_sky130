@@ -1,0 +1,39 @@
+* SPICE3 file created from sky130_vsdnand3_1x.ext - technology: sky130A
+
+.option scale=0.005u
+
+.subckt sky130_vsdnand3_1x A B C VGND VNB VPB VPWR Y
+X0 VPWR B Y VPB sky130_fd_pr__pfet_01v8 w=200 l=30
+X1 Y C VPWR VPB sky130_fd_pr__pfet_01v8 w=200 l=32
+X2 a_192_46# B a_110_46# VNB sky130_fd_pr__nfet_01v8 w=130 l=30
+X3 a_110_46# C VGND VNB sky130_fd_pr__nfet_01v8 w=130 l=32
+X4 Y A a_192_46# VNB sky130_fd_pr__nfet_01v8 w=130 l=30
+X5 Y A VPWR VPB sky130_fd_pr__pfet_01v8 w=200 l=30
+C0 VPWR A 0.02fF
+C1 a_192_46# VGND 0.01fF
+C2 B Y 0.34fF
+C3 VPWR VPB 0.02fF
+C4 Y VGND 0.34fF
+C5 B VGND 0.03fF
+C6 C Y 0.25fF
+C7 B C 0.11fF
+C8 a_110_46# Y 0.04fF
+C9 A Y 0.25fF
+C10 A B 0.13fF
+C11 VPWR Y 0.71fF
+C12 C VGND 0.08fF
+C13 VPWR B 0.03fF
+C14 a_110_46# VGND 0.01fF
+C15 A VGND 0.03fF
+C16 VPB Y 0.00fF
+C17 B VPB 0.00fF
+C18 A C 0.04fF
+C19 a_192_46# Y 0.04fF
+C20 VPWR VGND 0.01fF
+C21 B a_192_46# 0.02fF
+C22 VPWR C 0.06fF
+C23 VGND VNB 0.34fF
+C24 Y VNB 0.12fF
+C25 VPWR VNB 0.29fF
+C26 VPB VNB 0.31fF
+.ends

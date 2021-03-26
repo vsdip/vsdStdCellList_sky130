@@ -1,0 +1,43 @@
+* SPICE3 file created from sky130_vsdo21ai_1x.ext - technology: sky130A
+
+.option scale=0.01u
+
+.subckt sky130_vsdo21ai_1x A1 A2 B1 VGND VNB VPB VPWR Y
+X0 VPWR B1 Y VPB sky130_fd_pr__pfet_01v8 w=64 l=15
+X1 a_16_23# A2 VGND VNB sky130_fd_pr__nfet_01v8 w=42 l=15
+X2 Y A2 a_60_184# VPB sky130_fd_pr__pfet_01v8 w=64 l=15
+X3 Y B1 a_16_23# VNB sky130_fd_pr__nfet_01v8 w=42 l=15
+X4 a_60_184# A1 VPWR VPB sky130_fd_pr__pfet_01v8 w=64 l=15
+X5 VGND A1 a_16_23# VNB sky130_fd_pr__nfet_01v8 w=42 l=15
+C0 A1 VPB 0.00fF
+C1 A2 Y 0.17fF
+C2 A1 VPWR 0.11fF
+C3 A2 A1 0.21fF
+C4 a_16_23# B1 0.03fF
+C5 B1 VGND 0.02fF
+C6 VPWR VPB 0.02fF
+C7 A2 VPB 0.00fF
+C8 a_60_184# VPWR 0.01fF
+C9 A2 VPWR 0.03fF
+C10 Y B1 0.21fF
+C11 A1 B1 0.05fF
+C12 a_16_23# VGND 0.27fF
+C13 B1 VPWR 0.06fF
+C14 A2 B1 0.13fF
+C15 a_16_23# Y 0.14fF
+C16 Y VGND 0.08fF
+C17 A1 a_16_23# 0.11fF
+C18 A1 VGND 0.05fF
+C19 a_16_23# VPWR 0.03fF
+C20 A1 Y 0.03fF
+C21 A2 a_16_23# 0.08fF
+C22 VPWR VGND 0.01fF
+C23 A2 VGND 0.06fF
+C24 Y VPB 0.00fF
+C25 Y VPWR 0.26fF
+C26 VGND VNB 0.29fF
+C27 Y VNB 0.13fF
+C28 VPWR VNB 0.37fF
+C29 VPB VNB 0.30fF
+C30 a_16_23# VNB 0.06fF
+.ends

@@ -1,0 +1,83 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsdbuf2
+  CLASS BLOCK ;
+  FOREIGN sky130_vsdbuf2 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.760 BY 2.720 ;
+  PIN A
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.173400 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.960 1.090 1.230 1.260 ;
+        RECT 0.940 0.860 1.230 1.090 ;
+    END
+  END A
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.370200 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.010 1.800 0.430 2.300 ;
+        RECT -0.010 0.710 0.230 1.800 ;
+        RECT -0.010 0.400 0.350 0.710 ;
+        RECT 0.000 0.390 0.350 0.400 ;
+    END
+  END Y
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.100 2.560 1.700 2.820 ;
+        RECT 0.640 1.870 0.850 2.560 ;
+      LAYER mcon ;
+        RECT 0.170 2.610 0.340 2.780 ;
+        RECT 1.460 2.620 1.630 2.790 ;
+      LAYER met1 ;
+        RECT 0.000 2.500 1.750 2.910 ;
+    END
+  END VPWR
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.080 1.580 1.840 2.920 ;
+    END
+  END VPB
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.580 0.410 0.980 0.690 ;
+        RECT 0.580 0.400 0.840 0.410 ;
+        RECT 0.630 0.120 0.840 0.400 ;
+        RECT 0.000 -0.130 1.740 0.120 ;
+      LAYER mcon ;
+        RECT 0.160 -0.090 0.330 0.080 ;
+        RECT 1.410 -0.080 1.580 0.090 ;
+      LAYER met1 ;
+        RECT 0.000 -0.210 1.740 0.200 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 0.470 1.610 0.750 1.620 ;
+        RECT 0.430 1.600 0.750 1.610 ;
+        RECT 1.240 1.600 1.450 2.350 ;
+        RECT 0.430 1.430 1.610 1.600 ;
+        RECT 0.430 1.300 0.790 1.430 ;
+        RECT 0.430 1.270 0.780 1.300 ;
+        RECT 0.430 1.250 0.770 1.270 ;
+        RECT 1.400 0.400 1.610 1.430 ;
+  END
+END sky130_vsdbuf2
+END LIBRARY
+

@@ -1,0 +1,30 @@
+* SPICE3 file created from sky130_vsdinv_8x.ext - technology: sky130A
+
+.option scale=0.01u
+
+.subckt sky130_vsdinv_8x A Y VPWR VGND VPB
+X0 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X1 VGND A Y VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X2 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X3 Y A VPWR VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X4 Y A VPWR VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X5 Y A VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X6 VGND A Y VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X7 Y A VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X8 VGND A Y VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X9 VGND A Y VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X10 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X11 Y A VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X12 VPWR A Y VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X13 Y A VPWR VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X14 Y A VPWR VPB sky130_fd_pr__pfet_01v8 w=66 l=15
+X15 Y A VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+C0 Y A 1.75fF
+C1 Y VPB 0.02fF
+C2 A VPWR 0.21fF
+C3 VPWR VPB 0.05fF
+C4 Y VPWR 0.99fF
+C5 Y VGND 0.71fF
+C6 VPWR VGND 0.81fF
+C7 VPB VGND 0.62fF
+.ends

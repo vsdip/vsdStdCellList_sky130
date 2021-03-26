@@ -1,0 +1,10 @@
+* SPICE3 file created from sky130_vsd_conb.ext - technology: sky130A
+.option scale=0.01u
+
+.subckt sky130_vsd_conb HI LO VGND VPB
+X0 VPB LO HI w_n13_156# sky130_fd_pr__pfet_01v8 w=60 l=15
+X1 HI HI VPB w_n13_156# sky130_fd_pr__pfet_01v8 w=60 l=15
+X2 LO HI VGND VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+X3 VGND LO LO VGND sky130_fd_pr__nfet_01v8 w=42 l=15
+
+.ends

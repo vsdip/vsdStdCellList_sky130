@@ -1,0 +1,8 @@
+* SPICE3 file created from sky130_vsdinv_1x.ext - technology: sky130A
+
+.subckt inv_1x A Y VGND VPWR
+X0 Y A VGND VGND sky130_fd_pr__nfet_01v8 w=43 l=15
+X1 Y A VPWR VPWR sky130_fd_pr__pfet_01v8 w=70 l=15
+
+
+.ends

@@ -1,0 +1,26 @@
+Test Harness for verifying o21ai.spice
+
+.include '../../sky130nm.lib'
+.include 'sky130_vsdo21ai_1x.spice'
+
+X1 A1 A2 B1 VGND VPWR VPWR Y sky130_vsdo21ai_1x
+
+* Supplies
+VVGND VGND 0 0
+VVPWR VPWR VGND DC 1.8
+* Input Pulse
+
+VA A1 VGND PULSE 0 1.8 0 1n 1n 50ns 100ns
+VB A2 VGND PULSE 0 1.8 1.1n 1n 1n 50ns 100ns 
+VC B1 VGND PULSE 0 1.8 1.1n 1n 1n 25ns 50ns
+
+CLOAD Y VGND 0.05p
+
+.control
+tran 0.1n 100ns
+run
+plot a1
+plot a2
+plot b1
+ploy y
+.endc

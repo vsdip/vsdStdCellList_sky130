@@ -1,0 +1,82 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_vsdnand2_1x
+  CLASS CORE ;
+  FOREIGN sky130_vsdnand2_1x ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1.510 BY 2.720 ;
+  SYMMETRY X Y R90 ;
+  SITE unithd ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER li1 ;
+        RECT 0.060 0.180 0.300 0.830 ;
+        RECT 0.000 -0.120 1.500 0.180 ;
+      LAYER mcon ;
+        RECT 0.140 -0.100 0.310 0.080 ;
+        RECT 0.700 -0.100 0.870 0.080 ;
+        RECT 1.200 -0.100 1.370 0.080 ;
+      LAYER met1 ;
+        RECT 0.000 -0.170 1.520 0.240 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER li1 ;
+        RECT 0.020 2.570 1.490 2.870 ;
+        RECT 0.060 1.660 0.300 2.570 ;
+        RECT 1.210 1.660 1.450 2.570 ;
+      LAYER mcon ;
+        RECT 0.170 2.630 0.340 2.810 ;
+        RECT 0.700 2.640 0.870 2.820 ;
+        RECT 1.210 2.640 1.380 2.820 ;
+      LAYER met1 ;
+        RECT 0.000 2.500 1.510 2.900 ;
+    END
+  END VPWR
+  PIN VPB
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER nwell ;
+        RECT -0.130 1.460 1.630 2.880 ;
+    END
+  END VPB
+  PIN Y
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.477900 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.630 1.660 0.880 2.390 ;
+        RECT 0.630 1.330 0.870 1.660 ;
+        RECT 0.620 1.050 0.870 1.330 ;
+        RECT 0.640 0.670 0.870 1.050 ;
+        RECT 1.210 0.670 1.450 0.830 ;
+        RECT 0.640 0.490 1.450 0.670 ;
+        RECT 1.210 0.400 1.450 0.490 ;
+    END
+  END Y
+  PIN A
+    ANTENNAGATEAREA 0.169500 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.150 1.050 0.390 1.400 ;
+    END
+  END A
+  PIN B
+    ANTENNAGATEAREA 0.169500 ;
+    PORT
+      LAYER li1 ;
+        RECT 1.090 1.030 1.330 1.380 ;
+    END
+  END B
+END sky130_vsdnand2_1x
+END LIBRARY
+
